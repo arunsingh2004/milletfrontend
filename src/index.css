@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: "Tangerine", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: "Tangerine", serif;
+}

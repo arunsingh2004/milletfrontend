@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+.container-fluid {
+  padding: 0px 45px;
+}
+.myapp {
+  background: url("./assets/images/The\ Millet\ Odyssey\(15\).png");
+  background-repeat: repeat;
+}
+.ads-section {
+  background-color: #cf7d08;
+  justify-content: center;
+  display: flex;
+}

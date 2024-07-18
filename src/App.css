@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.container-fluid {
+  padding: 0px 45px;
+}
+
+.myapp {
+  background: url("./assets/images/lighter/milletbackground.png");
+  background-repeat: repeat;
+}
+.ads-section {
+  background-color: #cf7d08;
+  justify-content: center;
+  display: flex;
+}
+.ads-section {
+  background-color: #cf7d08;
+  justify-content: center;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 0 15px;
+  }
+}

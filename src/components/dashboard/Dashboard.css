@@ -1,0 +1,240 @@
+.container1 {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #8b4513;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.tabs button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 15px 20px;
+  font-size: 18px;
+  outline: none;
+  flex: 1;
+  transition: background-color 0.3s ease;
+}
+
+.tabs button.active {
+  background-color: #a0522d;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group button {
+  background-color: #8b4513;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+  background-color: #a0522d;
+}
+
+.update-button,
+.delete-button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  color: white;
+}
+
+.update-button {
+  background-color: #8b4513;
+}
+
+.update-button:hover {
+  background-color: #a0522d;
+}
+
+.delete-button {
+  background-color: #cd5c5c;
+}
+
+.delete-button:hover {
+  background-color: #a0522d;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.product-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.product-table td input,
+.product-table td textarea,
+.product-table td button {
+  width: 100%;
+}
+
+.product-table td img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.banner-ad-management h2,
+.banner-ad-management h3 {
+  color: #8b4513;
+}
+
+.banner-ad-management .form-group {
+  margin-bottom: 20px;
+}
+
+.banner-ad-management .form-group input,
+.banner-ad-management .form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.banner-ad-management .form-group button {
+  background-color: #8b4513;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.banner-ad-management .form-group button:hover {
+  background-color: #a0522d;
+}
+
+.banner-ad-management ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.banner-ad-management li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.banner-ad-management li img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.banner-ad-management li h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.banner-ad-management li p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .container1 {
+    padding: 15px;
+  }
+
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tabs button {
+    padding: 15px 0;
+    border-top: 1px solid #a0522d;
+    border-right: none;
+    border-left: none;
+  }
+
+  .tabs button:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 1px solid #a0522d;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .product-table td input,
+  .product-table td textarea,
+  .product-table td button {
+    font-size: 14px;
+  }
+
+  .product-table td img {
+    width: 50px;
+  }
+
+  .banner-ad-management li {
+    padding: 15px;
+  }
+}

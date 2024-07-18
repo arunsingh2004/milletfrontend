@@ -1,0 +1,46 @@
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.table {
+  color: black;
+}
+.order-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.order-card1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: #cf7d08;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-bottom: 20px;
+}
+.address-card {
+  width: 330px;
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  white-space: normal;
+  word-wrap: break-word;
+  justify-content: space-between;
+}
+.review-section-product {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

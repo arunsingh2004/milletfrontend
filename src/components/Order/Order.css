@@ -1,0 +1,13 @@
+.order-history-list {
+  margin-bottom: 20px;
+  font-size: larger;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.order-link {
+  color: rgb(8, 20, 251);
+  text-decoration: underline;
+}

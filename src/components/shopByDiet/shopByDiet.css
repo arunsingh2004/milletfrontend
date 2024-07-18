@@ -1,0 +1,59 @@
+.shop-by-diet {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Libre Baskerville", serif;
+}
+.shop-by-diet-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-wrap: nowrap;
+  font-weight: 700;
+  font-size: 24px;
+}
+.swiper-container.diet-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.image-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.diet-type {
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  text-align: center;
+  flex: 1 0 200px;
+  margin: 10px;
+}
+
+.diet-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diet-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+.diet-item div {
+  font-size: 16px;
+  color: #333;
+}
+.swiper-wrapper {
+  width: fit-content;
+}

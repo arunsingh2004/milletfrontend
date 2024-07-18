@@ -1,0 +1,7 @@
+.MuiButton-root {
+  justify-content: flex-start;
+}
+
+.MuiButton-fullWidth {
+  width: 100%;
+}

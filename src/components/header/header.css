@@ -1,0 +1,138 @@
+header{
+    width:100%;
+    height:80px;
+    margin:auto;
+    padding:15px 0px;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header.headerSearch{
+    width:100%;
+    height:60px;
+    border:1px solid #120f0c;
+}
+.header-row{
+    display: flex;
+    flex-direction: row;
+    height: min-content;
+    align-items: center;
+    padding: 2px;
+}
+.logo-row{
+    padding-left: 10px;
+    margin-left: 10px;
+}
+.search-row{
+    border-radius: 20px;
+    margin-left: 50px;
+    border: 2px solid rgb(197, 140, 49);
+    padding-top: 4px;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+#dropdown-basic-button{
+    border: none;
+}
+.search-row>input{
+    border: none;
+    background: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: smaller;
+}
+
+.search-row>input:focus, .search-row>input:active{
+    border-style: none;
+    outline: none;
+}
+.btn-categories{
+    border: none;
+    background: none;
+    font-size: smaller;
+    font-weight: bold;
+    padding: 2px;
+}
+.header-row-last{
+    font-family: "Libre Baskerville", serif;
+    margin-right: 30px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    flex-grow: inherit;
+}
+.header-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 50px
+}
+.icon-text{
+    align-self: self-end;
+}
+.icons-header{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-items: center;
+}
+  .custom-dropdown-item:hover {
+    background-color: #CF7D08 !important; /* Desired hover background color */
+    color: white !important; /* Desired text color on hover */
+  }
+  .dropdown-menu.show {
+    top: 0px !important; /* Adjust this value based on the height of your icon */
+    left: -15px !important; 
+   /* Adjust this value based on your desired alignment */
+  }
+  .CollapsableDrawer{
+    display: none; 
+    background: none;
+    border: none;
+    width: 30%;
+  }
+
+  @media only screen and (max-width: 1285px) {
+    .CollapsableDrawer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+    .header-list{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        position: absolute;
+        margin-top: 60px;
+        background-color: white;
+        width: fit-content;
+        place-self: flex-end;
+        
+    }
+    .header-row-last{
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+    }
+    .icons-header{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        cursor: pointer;
+    }
+    .icons-header:hover{
+        background-color: #CF7D08 ;
+    }
+  }
+  

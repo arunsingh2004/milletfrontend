@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+.banner {
+  border-radius: 8px;
+  background-color: #9c4a1a;
+  margin: 20px;
+  max-height: fit-content;
+  min-height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.subscribe-button {
+  background-color: #f7f3ef !important;
+}
+
+.banner-content {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.banner-title {
+  color: white;
+}
+
+.banner-text {
+  font-size: 56px;
+  font-weight: 700;
+  font-family: "Libre Baskerville", serif;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+}
+
+.banner-image {
+  width: 100%;
+
+  max-width: 500px;
+  display: block;
+  overflow: hidden;
+}
+
+.banner-image img {
+  object-fit: cover;
+
+  height: 100%;
+  width: 100%;
+}
+
+.banner-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  color: #9c4a1a;
+  font-weight: 800;
+  font-size: 16px;
+  max-width: fit-content;
+  flex-wrap: wrap;
+  overflow: visible;
+}
+
+.banner-discount {
+  margin-top: 20px;
+  font-weight: 800;
+  font-size: 16px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.banner-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#modal-title-custom {
+  align-self: center;
+}
+.modal-title {
+  align-self: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-text {
+    font-size: 48px;
+  }
+  .banner-image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .banner-text {
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,267 @@
+.childnav-container {
+  width: 100%;
+  background-color: transparent;
+  padding: 10px;
+
+  border: 1px solid rgb(197, 140, 49);
+  box-shadow: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.childnav-content {
+  margin-left: 54px;
+  margin-right: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.browse-button {
+  background-color: #9c4a1a;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-family: "Libre Baskerville", serif;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-item {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  font-family: "Libre Baskerville", serif;
+  font-weight: bolder;
+}
+
+.nav-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-item:hover a {
+  text-decoration: underline;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 190px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #cf7d08;
+}
+
+.mobile-dropdown-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #cf7d08;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.mobile-dropdown-content h3 {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-categories,
+.mobile-menu,
+.mobile-account {
+  margin-bottom: 20px;
+}
+
+.mobile-nav-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.mobile-nav-links .nav-item {
+  flex: 1;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .browse-button {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .nav-item {
+    font-size: 14px;
+  }
+
+  .nav-item:hover {
+    text-decoration: underline;
+  }
+  .dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 190px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 200px;
+    left: 25px;
+    border-radius: 5px;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #cf7d08;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .childnav-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .nav-item {
+    font-size: 20px;
+
+    margin: 3px 0;
+  }
+
+  .browse-button {
+    font-size: 14px;
+    padding: 6px 10px;
+    display: none;
+  }
+
+  .dropdown-content {
+    top: 660px;
+    left: 28px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .childnav-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .nav-item {
+    font-size: 20px;
+
+    margin: 3px 0;
+  }
+
+  .dropdown-content {
+    top: 660px;
+    left: 28px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .childnav-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .nav-item {
+    font-size: 13px;
+
+    margin: 5px 0;
+  }
+
+  .dropdown-content {
+    top: 660px;
+    left: 28px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .childnav-content {
+    margin-left: 8px;
+    margin-right: 8px;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .nav-item {
+    font-size: 13px;
+    margin: 4px 0;
+    display: none;
+  }
+
+  .dropdown-content {
+    top: 600px;
+    left: 18px;
+    width: 50%;
+    align-items: center;
+  }
+
+  .dropdown-content a {
+    padding: 4px 12px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .childnav-content {
+    margin-left: 8px;
+    margin-right: 8px;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+  }
+  .browse-button {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  .nav-item {
+    font-size: 13px;
+    margin: 4px 0;
+    display: none;
+  }
+
+  .browse-button {
+    font-size: 8px;
+    padding: 5px 8px;
+  }
+
+  .dropdown-content {
+    top: 600px;
+    left: 18px;
+    width: 50%;
+    align-items: center;
+  }
+
+  .dropdown-content a {
+    padding: 4px 12px;
+  }
+}
